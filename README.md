@@ -1,4 +1,4 @@
-# Hodgkin-Huxley Neuron Simulation & Bayesian Inference
+# Hodgkin-Huxley Neuron Simulation & Bayesian Inference ☆⌒(ゝ。∂)
 This repository contains Jupyter notebooks that simulate a Hodgkin-Huxley neuron model and apply Bayesian inference using synthetic data. The goal is to simulate neuronal activity and use Bayesian methods to infer the underlying model parameters.
 
 It is designed to be **interactive** and **beginner-friendly**, with explanations and visualizations throughout.
