@@ -1,0 +1,7 @@
+numpy
+matplotlib
+ipywidgets
+notebook
+torch
+seaborn
+sbi
