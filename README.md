@@ -31,7 +31,6 @@ chmod +x setup_pyhh.sh
 This script will:
 - Clone the official pyHH repo
 - Install numpy and matplotlib
-- Run the demo simulation at pyHH/tests/demo.py
 
 
 ## 📁 Repository Structure

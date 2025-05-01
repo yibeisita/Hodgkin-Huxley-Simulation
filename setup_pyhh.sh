@@ -14,6 +14,3 @@ cd pyHH
 
 echo "📦 Installing dependencies..."
 pip install numpy matplotlib
-
-echo "🚀 Running demo..."
-python tests/demo.py
