@@ -1,10 +1,10 @@
-# Hodgkin-Huxley Neuron Simulation & Bayesian Inference ☆⌒(ゝ。∂)
+# Hodgkin-Huxley Neuron Simulation & Bayesian Inference
 This repository contains Jupyter notebooks that simulate a Hodgkin-Huxley neuron model and apply Bayesian inference using synthetic data. The goal is to simulate neuronal activity and use Bayesian methods to infer the underlying model parameters.
 
 It is designed to be **interactive** and **beginner-friendly**, with explanations and visualizations throughout.
 
 
-## Setup Instructions 🔧
+## Setup Instructions
 
 ### 1. Clone This Repository
 
@@ -43,12 +43,12 @@ This script will:
 
 ````
 
-## 📓 Notebooks Overview
+## Notebooks Overview
 - **HH_model_simulation.ipynb:** This notebook simulates the **Hodgkin-Huxley model** of a neuron and visualizes its behavior (membrane potential over time) with varying parameters.
 
 - **Bayesian_Inference.ipynb:** This notebook applies **Bayesian inference** to infer the model parameters (such as resting potential and stimulus amplitude) from synthetic data generated using the Hodgkin-Huxley model.
 
-## 📦 Requirements
+## Requirements
 ````
 python == 3.11.8
 numpy
@@ -64,7 +64,7 @@ Install them all with:
 pip install -r requirements.txt
 `````
 
-## 📚 Additional Resources
+## Additional Resources
 
 If you're new to neural computation or want to dive deeper into the topics explored in this repository, here are some helpful resources:
 
@@ -79,10 +79,10 @@ If you're new to neural computation or want to dive deeper into the topics explo
 
 
 
-## 📖 Citation
+## Citation
 This project uses the `pyHH` library for simulating the Hodgkin-Huxley neuron model for Bayesian Inference. If you use this tool or build upon it, please consider citing the original repository:
 
 > Harden, S. W. (2020). pyHH: A Python implementation of the Hodgkin-Huxley neuron model. GitHub. https://github.com/swharden/pyHH
 
-## 📜 License
+## License
 This project uses the MIT License. 
