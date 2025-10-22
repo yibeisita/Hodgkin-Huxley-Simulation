@@ -33,7 +33,7 @@ This script will:
 - Install numpy and matplotlib
 
 
-## 📁 Repository Structure
+## Repository Structure
 ````
 ├── README.md
 ├── requirements.txt
