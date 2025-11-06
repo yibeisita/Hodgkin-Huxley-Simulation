@@ -69,6 +69,7 @@ This script will:
 
 ```
 ├── README.md
+├── LITERATURE.md
 ├── requirements.txt
 ├── setup_pyhh.sh
 ├── 1_HH_model_simulation.ipynb      
@@ -90,7 +91,7 @@ This script will:
 - **`2_Bayesian_Inference.ipynb`**
   
   Uses simulation-based Bayesian inference to estimate model parameters (e.g., resting potential, stimulus amplitude) from synthetic voltage data.
-  The notebook illustrates how simulated experiments can be used to train a neural network that learns to infer the true parameters probabilistically.
+  The notebook illustrates how simulated experiments can be used to train a neural network that learns to infer the true parameters probabilistically. Also contains basic computational analysis of the model.
 
 - **`3_Biological_vs_Artificial_Neurons.ipynb`**
 
