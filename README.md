@@ -21,7 +21,7 @@ Instead of directly fitting equations to experimental data, we use **simulation-
 3. We train a **neural posterior estimator** (from the `sbi` library) to learn the relationship between model parameters and the resulting voltage traces.
 4. Once trained, this model can infer the **most probable parameters** that could have produced new, unseen data.
 5. We then perform **posterior predictive checks** to verify that samples drawn from the inferred posterior can reproduce the observed data distributions, ensuring model validity and calibration.
-6. 
+6. Finally, we conduct basic computational performance analysis, profiling runtime during simulation and inference steps to assess efficiency and scalability.
 
 This workflow is particularly useful when:
 
