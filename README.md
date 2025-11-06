@@ -68,25 +68,32 @@ This script will:
 ├── README.md
 ├── requirements.txt
 ├── setup_pyhh.sh
-├── HH_model_simulation.ipynb      
-└── Bayesian_Inference.ipynb      
+├── 1_HH_model_simulation.ipynb      
+├── 2_Bayesian_Inference.ipynb
+└── 3_Biological_vs_Artificial_Neurons.ipynb 
 ```
 
 <br>
 
 ## Notebooks Overview
 
-- **`HH_model_simulation.ipynb`**
+- **`1_HH_model_simulation.ipynb`**
 
   This notebook is intended as a learning tool to help users understand how the Hodgkin–Huxley model works. It explores how changes in parameters affect the neuron’s membrane potential.
   It is not used directly in the Bayesian inference workflow. Instead, for inference, we rely on the pyHH
   library, which provides a clean, reusable implementation of the Hodgkin–Huxley model.
   This separation keeps the project organized and avoids having to turn the educational simulation notebook into a consumable model package.
 
-- **`Bayesian_Inference.ipynb`**
+- **`2_Bayesian_Inference.ipynb`**
   
   Uses simulation-based Bayesian inference to estimate model parameters (e.g., resting potential, stimulus amplitude) from synthetic voltage data.
   The notebook illustrates how simulated experiments can be used to train a neural network that learns to infer the true parameters probabilistically.
+
+- **`3_Biological_vs_Artificial_Neurons.ipynb`**
+
+  Compares biological neurons (modeled via Hodgkin–Huxley dynamics) and artificial neurons (activation functions like sigmoid, tanh, ReLU).
+  Includes interactive visualizations, highlighting parallels between membrane potential spikes and nonlinear activations.
+  Provides conceptual insights into how biology inspires deep learning architectures.
 
 <br>
 
@@ -101,6 +108,8 @@ notebook
 torch
 seaborn
 sbi
+time
+platform
 ```
 
 Install them all with:
@@ -123,13 +132,14 @@ If you're new to neural computation or Bayesian modeling, the following material
 
 ## Citation
 
-1. This project uses the `pyHH` library for simulating the Hodgkin–Huxley neuron model.
-If you use or extend this work, please cite the original repository:
+1. **Hodgkin–Huxley Model Implementation:**
 
-    > Harden, S. W. (2020). *pyHH: A Python implementation of the Hodgkin-Huxley neuron model.* GitHub. [https://github.com/swharden/pyHH](https://github.com/swharden/pyHH)
+   > Harden, S. W. (2020). *pyHH: A Python implementation of the Hodgkin-Huxley neuron model.* GitHub. [https://github.com/swharden/pyHH](https://github.com/swharden/pyHH)
 
+2. **Simulation-Based Inference Framework:**
 
-2. This project builds on the  `sbi` library developed by the Macke Lab (University of Tübingen & Cambridge).
+   > Macke Lab. (2020). *sbi: Simulation-based inference for scientific models.* University of Tübingen & University of Cambridge.
+
 
 <br>
 
