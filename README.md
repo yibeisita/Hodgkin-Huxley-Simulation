@@ -2,7 +2,7 @@
 # Hodgkin-Huxley Neuron Simulation and Bayesian Inference
 
 This repository contains Jupyter notebooks that demonstrate how to simulate a **Hodgkin–Huxley (HH)** neuron model and apply **Bayesian inference** using **simulation-based methods**.
-The project shows how to generate synthetic neuronal data and use modern probabilistic techniques to infer the underlying model parameters.
+The project shows how to generate synthetic neuronal data and use modern probabilistic techniques to infer the underlying model parameters, and draw conceptual parallels between **biological neurons** and **artificial neural networks**.
 
 It is designed to be **interactive** and **beginner-friendly**, with explanatory text and visualizations throughout.
 
@@ -26,6 +26,9 @@ This workflow is particularly useful when:
 * The model is complex or non-linear, making traditional likelihood-based methods impractical.
 * Real data are limited or noisy, but simulations are easy to run.
 * We want to quantify uncertainty in parameter estimates, not just find single best-fit values.
+
+Finally, the repository also includes a conceptual bridge between biology and machine learning.
+Comparing biological neurons modeled by Hodgkin–Huxley dynamics with artificial neurons used in neural networks. It highlights how the nonlinear input–output behavior that gives rise to action potentials in real neurons conceptually parallels the nonlinear activation functions (such as sigmoid, tanh, and ReLU) used in artificial neural networks. illustrating how ideas from neurobiology inspire the design of artificial intelligence systems.
 
 <br>
 
