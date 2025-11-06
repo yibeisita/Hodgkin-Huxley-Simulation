@@ -4,7 +4,7 @@
 This repository contains Jupyter notebooks that demonstrate how to simulate a **Hodgkin–Huxley (HH)** neuron model and apply **Bayesian inference** using **simulation-based methods**.
 The project shows how to generate synthetic neuronal data and use modern probabilistic techniques to infer the underlying model parameters, and draw conceptual parallels between **biological neurons** and **artificial neural networks**.
 
-It is designed to be **interactive** and **beginner-friendly**, with explanatory text and visualizations throughout.
+It is designed to be **interactive** and **beginner-friendly**, with explanatory text, visualizations, and diagnostic tools such as posterior predictive checks to assess model calibration and uncertainty.
 
 <br>
 
@@ -20,6 +20,8 @@ Instead of directly fitting equations to experimental data, we use **simulation-
 2. These parameter–data pairs form a **synthetic training dataset**.
 3. We train a **neural posterior estimator** (from the `sbi` library) to learn the relationship between model parameters and the resulting voltage traces.
 4. Once trained, this model can infer the **most probable parameters** that could have produced new, unseen data.
+5. We then perform **posterior predictive checks** to verify that samples drawn from the inferred posterior can reproduce the observed data distributions, ensuring model validity and calibration.
+6. 
 
 This workflow is particularly useful when:
 
@@ -91,7 +93,7 @@ This script will:
 - **`2_Bayesian_Inference.ipynb`**
   
   Uses simulation-based Bayesian inference to estimate model parameters (e.g., resting potential, stimulus amplitude) from synthetic voltage data.
-  The notebook illustrates how simulated experiments can be used to train a neural network that learns to infer the true parameters probabilistically. Also contains basic computational analysis of the model.
+  The notebook illustrates how simulated experiments can be used to train a neural network that learns to infer the true parameters probabilistically. It also includes **posterior predictive checks**, which compare simulated outputs drawn from the posterior against the original data to assess inference calibration and model fit. And some basic computational performance analysis, profiling execution time to benchmark the efficiency of simulation and inference routines.
 
 - **`3_Biological_vs_Artificial_Neurons.ipynb`**
 
@@ -126,10 +128,9 @@ pip install -r requirements.txt
 
 ## Additional Resources
 
-If you're new to neural computation or Bayesian modeling, the following materials provide excellent background:
+The following materials were useul to me to undertand these concept, they provide excellent background:
 
 * [Visualizing the Hodgkin-Huxley Model (YouTube)](https://www.youtube.com/watch?v=zOmhHE2xctw)
-* [MIT OpenCourseWare – Introduction to Neural Computation (9.40)](https://ocw.mit.edu/courses/9-40-introduction-to-neural-computation-spring-2018/)
 * [sbi: Simulation-Based Inference for the Hodgkin-Huxley Model](https://sbi-dev.github.io/sbi/0.22/examples/00_HH_simulator/)
 
 <br>
