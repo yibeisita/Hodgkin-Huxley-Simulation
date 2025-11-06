@@ -123,10 +123,13 @@ If you're new to neural computation or Bayesian modeling, the following material
 
 ## Citation
 
-This project uses the `pyHH` library for simulating the Hodgkin–Huxley neuron model.
+1. This project uses the `pyHH` library for simulating the Hodgkin–Huxley neuron model.
 If you use or extend this work, please cite the original repository:
 
-> Harden, S. W. (2020). *pyHH: A Python implementation of the Hodgkin-Huxley neuron model.* GitHub. [https://github.com/swharden/pyHH](https://github.com/swharden/pyHH)
+    > Harden, S. W. (2020). *pyHH: A Python implementation of the Hodgkin-Huxley neuron model.* GitHub. [https://github.com/swharden/pyHH](https://github.com/swharden/pyHH)
+
+
+2. This project builds on the  `sbi` library developed by the Macke Lab (University of Tübingen & Cambridge).
 
 <br>
 
