@@ -26,18 +26,37 @@ This approach has been particularly successful in neuroscience because:
 - We can easily run simulations but cannot compute likelihoods analytically
 - We want to quantify uncertainty, not just find point estimates
 
+
 ## Key References
 
-### Foundational Work on SBI
-- **Cranmer et al. (2020)**: "The frontier of simulation-based inference" - Comprehensive review of SBI methods and their applications across sciences.
-- **Papamakarios et al. (2019)**: "Sequential Neural Likelihood" - Developed the SNPE (Sequential Neural Posterior Estimation) algorithm used in this project.
+**Foundational Work on SBI**
 
-### SBI in Neuroscience
-- **Gonçalves et al. (2020)**: "Training deep neural density estimators to identify mechanistic models of neural dynamics" - Demonstrated SBI for inferring parameters of neural models, including HH neurons.
-- **Deistler et al. (2022)**: "Energy-efficient network activity from disparate circuit parameters" - Used SBI to understand parameter degeneracy in neural circuits.
+* Cranmer, K., Brehmer, J., & Louppe, G. (2020). *The frontier of simulation-based inference.* *Proceedings of the National Academy of Sciences*, 117(48), 30055-30062. [https://doi.org/10.1073/pnas.1912789117](https://doi.org/10.1073/pnas.1912789117) ([PNAS][1])
+  - Comprehensive review of simulation-based inference (SBI) methods and their applications across scientific domains.
+* Papamakarios, G., Sterratt, D. C., & Murray, I. (2019). *Sequential Neural Likelihood: Fast likelihood-free inference with autoregressive flows.* In *Proceedings of the Twenty-Second International Conference on Artificial Intelligence and Statistics (AISTATS 2019)*, Proceedings of Machine Learning Research 89:837-848. [https://proceedings.mlr.press/v89/papamakarios19a.html](https://proceedings.mlr.press/v89/papamakarios19a.html) ([Proceedings of Machine Learning Research][2])
+  - Introduced the Sequential Neural Likelihood (SNL) approach, which inspired and complements SNPE (Sequential Neural Posterior Estimation) methods used in this project.
 
-### The HH Model in Modern Context
-- **Hodgkin & Huxley (1952)**: "A quantitative description of membrane current and its application to conduction and excitation in nerve" - The original paper (Nobel Prize 1963).
+**SBI in Neuroscience**
+
+* Gonçalves, P. J., Lueckmann, J.-M., Deistler, M., Nonnenmacher, M., Öcal, K., Bassetto, G., et al. (2020). *Training deep neural density estimators to identify mechanistic models of neural dynamics.* *eLife*, 9:e56261. [https://doi.org/10.7554/eLife.56261](https://doi.org/10.7554/eLife.56261) ([PMC][3])
+  - Demonstrated the use of SBI for inferring parameters of mechanistic neural models, including the Hodgkin–Huxley neuron.
+* Deistler, M., Macke, J. H., & Gonçalves, P. J. (2022). *Energy-efficient network activity from disparate circuit parameters.* *Proceedings of the National Academy of Sciences*, 119(44), e2207632119. [https://doi.org/10.1073/pnas.2207632119](https://doi.org/10.1073/pnas.2207632119) ([PNAS][4])
+  - Used SBI to explore parameter degeneracy and compensation in neural circuits, showing how different configurations can yield similar dynamics.
+
+**The HH Model in Modern Context**
+
+* **Hodgkin, A. L., & Huxley, A. F. (1952).**
+  *A quantitative description of membrane current and its application to conduction and excitation in nerve.* *The Journal of Physiology*, 117(4), 500–544.
+  [https://doi.org/10.1113/jphysiol.1952.sp004764](https://doi.org/10.1113/jphysiol.1952.sp004764)
+  - The original and foundational paper describing the Hodgkin–Huxley model, which remains a cornerstone of computational neuroscience.
+
+
+[1]: https://www.pnas.org/doi/10.1073/pnas.1912789117?utm_source=chatgpt.com "The frontier of simulation-based inference - PNAS"
+[2]: https://proceedings.mlr.press/v89/papamakarios19a.html?utm_source=chatgpt.com "Fast Likelihood-free Inference with Autoregressive Flows"
+[3]: https://pmc.ncbi.nlm.nih.gov/articles/PMC7581433/?utm_source=chatgpt.com "Training deep neural density estimators to identify mechanistic ..."
+[4]: https://www.pnas.org/doi/10.1073/pnas.2207632119?utm_source=chatgpt.com "Energy-efficient network activity from disparate circuit ..."
+
+
 
 ## Connections to NeuroAI
 
